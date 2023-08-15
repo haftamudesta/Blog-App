@@ -100,7 +100,10 @@ To fix all Linter error automatically
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **More Features**
+- [ ] **Add posts**
+- [ ] **Add comments**
+- [ ] **Add likes**
+- [ ] **Add form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +116,7 @@ Feel free to check the [issues page](https://github.com/haftamudesta/Blog-App/is
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please let me know
+If you like this project please let me know and give ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
