@@ -9,4 +9,4 @@ class Comment < ApplicationRecord
     post.increment!(:coments_counter)
   end
 end
-# this comment is to check whether my models are pushed or not
+
