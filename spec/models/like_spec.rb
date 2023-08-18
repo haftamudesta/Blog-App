@@ -1,7 +1,7 @@
 require_relative '../rails_helper'
 
 RSpec.describe Comment, type: :model do
-  let(:user) { User.new(name: 'Tom & Jerry', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Best friends', posts_counter: 0) }
+  let(:user) { User.new(name: 'haftamu', photo: 'https://www.facebook.com/photo/?fbid=1362909880443056&set=a.104394846294572', bio: 'Best friends', posts_counter: 0) }
   let(:post) do
     Post.new(title: 'The Great Adventure', text: 'The story of Tom and Jerry', author: user, comments_counter: 0,
              likes_counter: 0)

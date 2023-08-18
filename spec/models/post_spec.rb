@@ -1,4 +1,4 @@
-require '../rails_helper'
+require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   subject do
@@ -20,7 +20,11 @@ RSpec.describe Post, type: :model do
     subject.title = nil
     expect(subject).to_not be_valid
   end
-  it 'title should be b/w 3 and 250 words' do
+  it 'title should not be too short' do
+    subject.title = 'a' * 3
+    expect(subject).to_not be_valid
+  end
+  it 'title should be between 5 and 250 words' do
     subject.title = 'a' * 200
     expect(subject).to be_valid
   end
