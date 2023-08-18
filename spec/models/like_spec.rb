@@ -1,4 +1,4 @@
-require_relative '../rails_helper'
+require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   let(:user) { User.new(name: 'haftamu', photo: 'https://www.facebook.com/photo/?fbid=1362909880443056&set=a.104394846294572', bio: 'Best friends', posts_counter: 0) }
