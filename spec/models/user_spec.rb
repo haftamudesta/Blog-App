@@ -23,12 +23,12 @@ RSpec.describe User, type: :model do
   end
 
   it 'post_counter must not be less than 1' do
-    subject.post_counter = -1
+    subject.posts_counter = -1
     expect(subject).to_not be_valid
   end
 
   it 'should have posts counter greater than or euqal to 0' do
-    subject.post_counter = 120
+    subject.posts_counter = 120
     expect(subject).to be_valid
   end
 

@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do
   subject do
     @user = User.create(name: 'haftamu', photo: 'https://www.facebook.com/photo/?fbid=1362909880443056&set=a.104394846294572', bio: 'full stack developer and electrical engineer',
-                        post_counter: 12)
-    @post = Post.create(title: 'React fundamentals', text: 'the best book to read', coments_counter: 10, likes_counter: 10,
+                        posts_counter: 12)
+    @post = Post.create(title: 'React fundamentals', text: 'the best book to read', comments_counter: 20, likes_counter: 20,
                         author: @user)
   end
 
@@ -14,17 +14,6 @@ RSpec.describe Post, type: :model do
     subject.title = nil
     expect(subject).to_not be_valid
   end
-
-  # # it 'title should not be too short' do
-  # #   subject.title = 'a'
-  # #   expect(subject).to_not be_valid
-  # # end
-
-  # # it 'title should not be too long' do
-  # #   subject.title = 'a' * 300
-  # #   expect(subject).to_not be_valid
-  # # end
-
   it 'title should be b/w 3 and 250 words' do
     subject.title = 'a' * 200
     expect(subject).to be_valid
@@ -49,17 +38,17 @@ RSpec.describe Post, type: :model do
   end
 
   it 'comments_counter must be integer' do
-    subject.coments_counter = 12
+    subject.comments_counter = 12
     expect(subject).to be_valid
   end
 
   it 'comments_counter should have valid value' do
-    subject.coments_counter = 12.2
+    subject.comments_counter = 12.2
     expect(subject).to_not be_valid
   end
 
   it 'comments_counter must not be less than 1' do
-    subject.coments_counter = -1
+    subject.comments_counter = -1
     expect(subject).to_not be_valid
   end
 
