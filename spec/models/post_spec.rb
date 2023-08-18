@@ -1,11 +1,17 @@
-require 'rails_helper'
+require '../rails_helper'
 
 RSpec.describe Post, type: :model do
   subject do
-    @user = User.create(name: 'haftamu', photo: 'https://www.facebook.com/photo/?fbid=1362909880443056&set=a.104394846294572', bio: 'full stack developer and electrical engineer',
-                        posts_counter: 12)
-    @post = Post.create(title: 'React fundamentals', text: 'the best book to read', comments_counter: 20, likes_counter: 20,
-                        author: @user)
+    @user = User.create(
+      name: 'haftamu',
+      photo: 'https://www.facebook.com/photo/?fbid=1362909880443056&set=a.104394846294572',
+      bio: 'full stack developer and electrical engineer', posts_counter: 12
+    )
+    @post = Post.create(
+      title: 'React fundamentals',
+      text: 'the best book to read', comments_counter: 20, likes_counter: 20,
+      author: @user
+    )
   end
 
   before { subject.save }

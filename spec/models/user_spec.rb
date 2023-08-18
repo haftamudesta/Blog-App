@@ -17,7 +17,6 @@ RSpec.describe User, type: :model do
     expect(subject.bio).to eql 'Full stack developer'
   end
 
-
   it 'photo should have valid value' do
     expect(subject.photo).to eql 'https://www.facebook.com/photo/?fbid=1362909880443056&set=a.104394846294572'
   end

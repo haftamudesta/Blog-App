@@ -6,7 +6,7 @@ RSpec.describe Comment, type: :model do
     Post.new(title: 'The Great Adventure', text: 'The story of Tom and Jerry', author: user, comments_counter: 0,
              likes_counter: 0)
   end
-   subject { Comment.new(text: 'Tom and Jerry show', author: user, post: post) }
+  subject { Comment.new(text: 'Tom and Jerry show', author: user, post:) }
 
   before { subject.save }
 
