@@ -4,6 +4,11 @@ class PostsController < ApplicationController
     end
     def show
         @post=@user.post.find(params[:id])
+
+
+
+
+        
     end
     def new
         @post=Post.new
