@@ -34,7 +34,7 @@
 
 # 📖 Blog App - Ruby on Rails - ROR Microverse Project<a name="about-project"></a>
 
-> Blog App - developed with Ruby on Rails.
+> Blog App - developed with Ruby on Rails.A blog app is a classic example of a blog website. The blog app creates a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
   https://github.com/haftamudesta/Blog-App
 ```
 
-To install the necessary dependencies, you should run:
+To install the necessary dependencies go to the folder Blog-App in you computer and on the terminal you should run:
 
 ### `gem install bundler`
 
