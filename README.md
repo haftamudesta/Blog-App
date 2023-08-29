@@ -1,24 +1,142 @@
-# README
+<a name="readme-top"></a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<div align="center">
 
-Things you may want to cover:
+  <img src="https://user-images.githubusercontent.com/65084923/236905326-efe684f3-a1d1-4acb-af4d-cf290f8b3982.png" alt="logo" width="100"  height="auto" />
+  <img src="https://user-images.githubusercontent.com/65084923/232604539-ea646b45-13a1-4214-9ffa-6720ec9634bf.png" alt="logo" width="100"  height="auto" />
+  <br/>
+  <img src="https://user-images.githubusercontent.com/65084923/220200035-01fa5e08-af6a-495b-b597-55157a2b7d95.gif" alt="logo" />
+  <br/>
 
-* Ruby version
+  <h3><b>Blog App - Ruby on Rails</b></h3>
+  <h3><b>Blog App - Ruby on Rails - ROR Microverse Project</b></h3>
 
-* System dependencies
+</div>
 
-* Configuration
+# 📗 Table of Contents
 
-* Database creation
+- [📖 About the Project](#about-project)
 
-* Database initialization
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 
-* How to run the test suite
+- [💻 Getting Started](#getting-started)
+  - [Available Scripts](#available-scripts)
+  - [Clone](#clone)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-* Services (job queues, cache servers, search engines, etc.)
+# 📖 Blog App - Ruby on Rails - ROR Microverse Project<a name="about-project"></a>
 
-* Deployment instructions
+> Blog App - developed with Ruby on Rails.A blog app is a classic example of a blog website. The blog app creates a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* ...
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Migration DB feature: tables and Relations**
+- **Models and Active Records**
+- **Rspec Test of all models**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and use as a template, follow these steps.
+
+### Clone <a name="clone"></a>
+
+Clone this repository to your desired folder:
+
+```sh
+  https://github.com/haftamudesta/Blog-App
+```
+
+To install the necessary dependencies go to the folder Blog-App in you computer and on the terminal you should run:
+
+### `gem install bundler`
+
+### `bundler install`
+
+## 🤖 Available Scripts <a name="available-scripts"></a>
+
+In the project directory, you can run:
+
+### `rubocop -A`
+
+To fix all Linter error automatically
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHOR -->
+
+## 👥 Author <a name="authors"></a>
+
+: Haftamu Desta Yemata 💓
+
+- GitHub: [@haftamudesta](https://github.com/haftamudesta)
+- Twitter: [@DestaHftamu](https://twitter.com/DestaHftamu)
+- LinkedIn: [@Haftamu Desta](https://linkedin.com/in/haftamu-desta)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Add posts**
+- [ ] **Add comments**
+- [ ] **Add likes**
+- [ ] **Add form**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/haftamudesta/Blog-App/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please let me know and give ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Microverse
+<br/>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ❓ FAQ <a name="faq"></a>
+
+- **Is there any restriction to adapting the app to other porpuse??**
+
+  - No problem.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
