@@ -1,0 +1,32 @@
+<%=stylesheet_link_tag('post')%>
+<div class="main-post">
+  <div>
+    <i class="fa-brands fa-square-x-twitter"></i>
+  </div>
+  <div class="post-name">
+    <h3> User name: <%= @user.name %> </h3>
+    <p> Number of posts: <%= @user.posts_counter %> </p>
+  </div>
+</div>
+  <% @user.posts.each do |post| %>
+    <div class="recent_post">
+        <p><%= post.title %></p>
+        <p class="post_text"><%= post.text %></p>
+      
+      <div class="comment_like">
+      <div>
+          <p>Comments: <%= post.comments_counter %></p>
+          </div>
+          <div>
+          <p>Likes: <%= post.likes_counter %></p>
+          </div>
+      </div>
+    </div>
+    <div class="comments_container">
+      <% post.recent_comments.each do |comment| %>
+        <p class="comments_container_p"><%= "#{comment.author.name}: #{comment.text}" %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+<a href="#">Pagination</a>
