@@ -10,9 +10,10 @@
 </div>
   <% @user.posts.each do |post| %>
     <div class="recent_post">
+    <a href=<%= "/users/#{@user.id}/posts/#{post.id}" %>>
         <p><%= post.title %></p>
         <p class="post_text"><%= post.text %></p>
-      
+      </a>
       <div class="comment_like">
       <div>
           <p>Comments: <%= post.comments_counter %></p>
