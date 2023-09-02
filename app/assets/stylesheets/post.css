@@ -45,3 +45,52 @@ a {
   border: 2px solid black;
   width: 52%;
 }
+
+.add_post {
+  font-weight: 400;
+  margin-left: 10%;
+}
+
+.form {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  width: 40%;
+}
+
+.form_title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.form_text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.submit-btn {
+  width: 15%;
+  margin-left: 30%;
+  background: blueviolet;
+}
+
+.create_post_btn {
+  width: 15%;
+  height: 30px;
+  text-align: left;
+  background: yellowgreen;
+  text-decoration: none;
+}
+
+.create_comment_btn {
+  width: 15%;
+  height: 30px;
+  text-align: left;
+  text-decoration: none;
+  background-color: blueviolet;
+}
+
+.comment_field {
+  display: ruby-base;
+  margin-top: 20px;
+}

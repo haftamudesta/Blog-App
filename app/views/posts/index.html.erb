@@ -22,10 +22,14 @@
           <p>Likes: <%= post.likes_counter %></p>
           </div>
       </div>
+      <div>
+
     </div>
+    </div>
+    
     <div class="comments_container">
       <% post.recent_comments.each do |comment| %>
-        <p class="comments_container_p"><%= "#{comment.author.name}: #{comment.text}" %></p>
+        <%= render partial: 'shared/comment', locals: { comment: comment } %>
       <% end %>
     </div>
   <% end %>
