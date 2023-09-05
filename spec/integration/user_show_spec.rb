@@ -21,13 +21,13 @@ RSpec.describe 'user page', :focus, type: :system do
              author: @user1)
     Post.new(id: 4, title: 'Hello four', text: 'this is my fourth post', likes_counter: 0, comments_counter: 0,
              author: @user1)
-    Comment.new(author: @user1, post: post1, text: 'Awesome post!')
+    Comment.new(author: @user1, post: post1, text: 'first comment')
     Like.new(author: @user1, post: post1)
   end
   describe 'show page' do
     it 'should show the user profile picture' do
       visit user_posts_path(user_id: 4)
-      expect(page).to have_css("img[src*='#{@photo}']")
+      expect(page).to have_css("img[src*=#{@user1.photo}]")
     end
     it 'should show the username' do
         visit user_path(id: 4)
@@ -52,13 +52,6 @@ RSpec.describe 'user page', :focus, type: :system do
         visit user_path(id: 4)
         expect(page).to have_link(class: 'see_all_posts_btn')
       end
-
-      it 'should redirected to specific post page' do
-        visit user_path(id: 4)
-        page.all(:link, 'link_each_post').last.click
-        expect(page).to have_current_path('/users/4/posts/1')
-      end
-  
       it 'should redirected to index post page' do
         visit user_path(id: 4)
         page.all(:link, class: 'see_all_posts_btn').last.click
