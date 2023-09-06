@@ -4,15 +4,14 @@
       <i class="fa-brands fa-square-x-twitter"></i>
     </div>
     <div class="picture_container">
-      <a class="picture_link" href=<%= "/users/#{user.id}" %>>
+      <a id="picture_link" href=<%= "/users/#{user.id}" %>>
         <%= image_tag(user.photo, class: "profile_picture") %>
       </a>
     </div>
     <div class="name_container">
-      <a href=<%= "/users/#{user.id}" %>>
+      <a href=<%= "/users/#{user.id}" %> id="name_container_link">
         <h3> User Name: <%= user.name %> </h3>
-      </a>
         <p> Number of posts: <%= user.posts_counter %> </p>
     </div>
-  </a>
+      </a>
 </div>

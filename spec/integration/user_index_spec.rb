@@ -3,13 +3,13 @@ RSpec.describe 'user, Index page', :focus, type: :intgration do
   before :each do
     @photo = 'https://unsplash.com/photos/F_-0BxGuVvo',
              @user1 = User.new(
-               id: 6,
-               name: 'Tom', photo: @photo, bio: 'full stack developer', posts_counter: 0
+               id: 4,
+               name: 'Tom', photo: @photo, bio: 'Teacher from Mexico.', posts_counter: 0
              )
     Post.new(
-      id: 20,
-      title: 'rails test',
-      text: 'rails integration test',
+      id: 1,
+      title: 'Hello one',
+      text: 'this is mu first post',
       likes_counter: 0,
       comments_counter: 0,
       author: @user1
@@ -30,7 +30,7 @@ RSpec.describe 'user, Index page', :focus, type: :intgration do
   end
   it 'When I click on a user, I am redirected to that users show page' do
     visit users_path
-    page.all(:link, 'picture_link').last.click
+    page.all(:link, 'name_container_link').last.click
     expect(page).to have_current_path('/users/4')
   end
 end
