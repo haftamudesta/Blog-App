@@ -59,9 +59,6 @@ RSpec.describe 'user page', :focus, type: :system do
       page.all(:link, 'link_each_post').last.click
       expect(page).to have_current_path('/users/4/posts/4')
     end
-
-
-
     it 'should redirected to index post page' do
       visit user_path(id: 4)
       page.all(:link, class: 'see_all_posts_btn').last.click
