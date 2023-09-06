@@ -50,3 +50,7 @@
 .comment_like p {
   margin-left: 20px;
 }
+
+.picture_link {
+  display: none;
+}

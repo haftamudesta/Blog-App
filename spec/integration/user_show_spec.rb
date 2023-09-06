@@ -31,42 +31,41 @@ RSpec.describe 'user page', :focus, type: :system do
       expect(page).to have_selector('img[src="https://unsplash.com/photos/F_-0BxGuVvo"]')
     end
     it 'should show the username' do
-        visit user_path(id: 4)
-        expect(page).to have_content("User Name:#{@user1.name}")
-      end
-      it 'should show the number of posts by username' do
-        visit user_path(id: 4)
-        expect(page).to have_content("Number of posts: 6")
-      end
+      visit user_path(id: 4)
+      expect(page).to have_content("User Name:#{@user1.name}")
+    end
+    it 'should show the number of posts by username' do
+      visit user_path(id: 4)
+      expect(page).to have_content('Number of posts: 6')
+    end
 
-      it 'should show user bio' do
-        visit user_path(id: 4)
-        expect(page).to have_content("Teacher from Mexico.")
-      end
+    it 'should show user bio' do
+      visit user_path(id: 4)
+      expect(page).to have_content('Teacher from Mexico.')
+    end
 
-      it 'should show the last 3 posts' do
-        visit user_path(id: 4)
-        last_post = page.all('.each_post').count
-        expect(last_post).to eq(3)
-      end
-      it 'should have a button that lets view all user posts' do
-        visit user_path(id: 4)
-        expect(page).to have_link(class: 'see_all_posts_btn')
-      end
+    it 'should show the last 3 posts' do
+      visit user_path(id: 4)
+      last_post = page.all('.each_post').count
+      expect(last_post).to eq(3)
+    end
+    it 'should have a button that lets view all user posts' do
+      visit user_path(id: 4)
+      expect(page).to have_link(class: 'see_all_posts_btn')
+    end
 
-      it 'should redirected to specific post page' do
-        visit user_path(id: 4)
-        page.all(:link, 'link_each_post').last.click
-        expect(page).to have_current_path('/users/4/posts/4')
-      end
+    it 'should redirected to specific post page' do
+      visit user_path(id: 4)
+      page.all(:link, 'link_each_post').last.click
+      expect(page).to have_current_path('/users/4/posts/4')
+    end
 
 
 
-      it 'should redirected to index post page' do
-        visit user_path(id: 4)
-        page.all(:link, class: 'see_all_posts_btn').last.click
-        expect(page).to have_current_path('/users/4/posts')
-      end
-      
+    it 'should redirected to index post page' do
+      visit user_path(id: 4)
+      page.all(:link, class: 'see_all_posts_btn').last.click
+      expect(page).to have_current_path('/users/4/posts')
+    end
   end
 end
