@@ -27,7 +27,7 @@ RSpec.describe 'Index posts page', :focus, type: :system do
   describe 'index page' do
     it 'should show the user profile picture' do
       visit user_posts_path(user_id: 4)
-      expect(page).to have_css("img[src*='#{@user1.photo}']")
+      expect(page).to have_selector('img[src="https://unsplash.com/photos/F_-0BxGuVvo"]')
     end
 
     it 'should show the username' do

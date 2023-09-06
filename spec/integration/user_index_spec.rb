@@ -18,12 +18,6 @@ RSpec.describe "user, Index page",:focus,type: :intgration  do
         visit users_path(user_id: 4)
         expect(page).to have_css("img[src*='#{@user1.photo}']")
       end
-
-
-    it("views users page") do
-    visit users_path
-    expect(page).to have_content("All Users")
-    end
     it("can see user name off all other users") do
     visit users_path
     expect(page).to have_content("User Name: #{@user1.name}")

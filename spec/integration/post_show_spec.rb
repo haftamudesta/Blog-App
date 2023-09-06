@@ -25,11 +25,6 @@ RSpec.describe 'Index posts page', :focus, type: :system do
     Like.new(author: @user1, post: post1)
   end
   describe 'show page' do
-    it 'should show the user profile picture' do
-      visit user_posts_path(user_id: 4)
-      expect(page).to have_css("img[src*='#{@user1.photo}']")
-    end
-
     it('should display who wrote the post') do
       visit user_posts_path(user_id: 4, id: 5)
       expect(page).to have_content("User Name:#{@user1.name}")

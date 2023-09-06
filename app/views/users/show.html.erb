@@ -4,14 +4,14 @@
     <i class="fa-brands fa-square-x-twitter"></i>
   </div>
   <div class="picture_container">
-      <a class="picture_link" href=<%= "/users/#{@user.id}" %>>
-        <%= image_tag(@user.photo, class: "img_profile") %>
-      </a>
-    </div>
+    <%= image_tag(@user.photo, class: "img_profile") %>
+  </div>
   <div class="name_container">
     <h3> User Name:<%= @user.name %> </h3>
     <p> Number of posts: <%= @user.posts_counter %> 
   </div>
+
+  
 </div>
 
 <div class="user-bio">
@@ -24,7 +24,7 @@
     <a id="link_each_post" href=<%= "/users/#{@user.id}/posts/#{post.id}" %>>
         <p><%= post.title %></p>
         <p class="post_text"><%= post.text.slice(0..60) %>...</p>
-      
+      </a>
       <div class="comment_like">
       <div>
         <p>Comments: <%= post.comments_counter %></p>
