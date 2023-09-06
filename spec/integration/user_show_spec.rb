@@ -27,7 +27,7 @@ RSpec.describe 'user page', :focus, type: :system do
   describe 'show page' do
     it 'should show the user profile picture' do
       visit users_path(user_id: 4)
-       expect(page).to have_selector('img[src="https://unsplash.com/photos/F_-0BxGuVvo"]')
+      expect(page).to have_selector('img[src="https://unsplash.com/photos/F_-0BxGuVvo"]')
     end
     it 'should show the username' do
       visit user_path(id: 4)
