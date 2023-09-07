@@ -9,7 +9,7 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autocomplete: "email",placeholder: "Use Name", class: 'form_field'  %>
+    <%= f.email_field :email, autocomplete: "email",placeholder: "User Name", class: 'form_field'  %>
   </div>
 
   <div class="field">
@@ -17,7 +17,7 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", class: 'form_field'  %>
+    <%= f.password_field :password, autocomplete: "new-password",placeholder: "Password" class: 'form_field'  %>
   </div>
 
   <div class="field">
@@ -31,7 +31,7 @@
   </div>
 
   <%= f.hidden_field :posts_counter, value: 0 %>
-  <%= f.hidden_field :photo, value: 'https://randomuser.me/api/portraits/men/31.jpg' %>
+  <%= f.hidden_field :photo, value: 'https://unsplash.com/photos/F_-0BxGuVvo' %>
 
   <div class="actions">
     <%= f.submit "Sign up", class: 'form_field'  %>
