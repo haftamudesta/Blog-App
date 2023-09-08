@@ -1,3 +1,7 @@
 <div class="comment_container">
-    <p> <%= "#{User.find(comment.author.id).name}: #{comment.text}" %> </p>
+    <p> <%= "#{User.find(comment.author.id).name}: #{comment.text}" %> 
+    <% if can? :destroy, comment %>
+        <%= button_to "Delete",  user_post_comment_path(user_id: @user.id, post_id: @post.id, id: comment.id), method: :delete %>
+    <% end %>
+    </p>
 </div>
