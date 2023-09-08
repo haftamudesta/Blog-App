@@ -32,10 +32,7 @@ class PostsController < ApplicationController
     @user.save
     redirect_to user_path(@user.id), notice: 'Post deleted successfully.'
   end
-
-
   private
-
   def post_params
     params.require(:post).permit(:title, :text)
   end

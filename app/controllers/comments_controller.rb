@@ -28,8 +28,6 @@ class CommentsController < ApplicationController
     post.save
     redirect_to user_post_path(user_id: user.id, id: post.id), notice: 'Post deleted successfully.'
   end
-
-
   private
 
   def comment_params
