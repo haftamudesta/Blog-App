@@ -1,0 +1,25 @@
+<%=stylesheet_link_tag('post')%>
+  <h4><%= @post.title %></h4>
+  <div class="comment_like">
+    <p>Comments: <%= @post.comments_counter %></p>
+    <p>Likes: <%= @post.likes_counter %></p>
+  </div>
+</div>
+<p class="post_content"><%= @post.text %></p>
+<%=render 'shared/like'%>
+<div class="comments_container">
+  <% @post.comments.each do |comment| %>
+    <%= render "shared/comment", comment: comment %>
+  <% end %>
+  <button type="button" class="create_post_btn"><%= link_to "Add new post", new_user_post_path(@user) %></button>
+<% if can? :destroy, @post %>
+  <%= button_to "Delete Post",  user_post_path(user_id: @user.id, id: @post.id), method: :delete %>
+<% end %>
+
+  <button type="button" class="create_comment_btn"><%= link_to "Add new comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id) %>
+  </button>
+</div>
+<% if can? :destroy, @post %>
+  <%= button_to "Delete Post",  user_post_path(user_id: @user.id, id: @post.id), method: :delete %>
+<% end %>
+
