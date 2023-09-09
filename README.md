@@ -103,7 +103,7 @@ To fix all Linter error automatically
 - [ ] **Add posts**
 - [ ] **Add comments**
 - [ ] **Add likes**
-- [ ] **Add form**
+- [ ] **interact with posts**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
