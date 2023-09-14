@@ -1,0 +1,15 @@
+<%=stylesheet_link_tag('post')%>
+<div class="post_detail">
+  <h4><%= @post.title %></h4>
+  <div class="comment_like">
+    <p>comments: <%= @post.comments_counter %></p>
+    <p>likes: <%= @post.likes_counter %></p>
+  </div>
+</div>
+<p class="post_content"><%= @post.text %></p>
+
+<div class="comments_container">
+  <% @post.comments.each do |comment| %>
+    <%= render "comment", comment: comment %>
+  <% end %>
+</div>

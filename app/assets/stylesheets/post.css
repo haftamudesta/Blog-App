@@ -1,0 +1,47 @@
+.main-post {
+  display: flex;
+  margin-top: 20px;
+}
+
+.main-post i {
+  font-size: 120px;
+}
+
+.post-name {
+  display: flex;
+  border: 2px solid black;
+  width: 40%;
+  margin-left: 40px;
+}
+
+.post-name p {
+  margin-top: 60px;
+  margin-left: 60px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.recent_post {
+  margin-top: 16px;
+  width: 51%;
+  border: 2px solid black;
+}
+
+.comment_like {
+  display: flex;
+  margin-left: 50%;
+}
+
+.comment_like p {
+  margin-left: 20px;
+}
+
+a {
+  margin-left: 25%;
+}
+
+.post_detail {
+  display: flex;
+  border: 2px solid black;
+  width: 52%;
+}
